@@ -63,6 +63,10 @@ h1 {
     align-self: center;
 }
 
+.mark-all-msgs:hover {
+    color: var(--Blue);
+}
+
 .new {
     background-color: var(--Verylightgrayishblue);
     color:var(--Blue)
