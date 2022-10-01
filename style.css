@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 30%);
+
+    --White: hsl(0, 0%, 100%);
+    --Verylightgrayishblue: hsl(210, 60%, 98%);
+    --Lightgrayishblue1: hsl(211, 68%, 94%);
+    --Lightgrayishblue2: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-color: var(--Verylightgrayishblue);
+}
+
+main {
+    background-color: var(--White);
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+#count_of_notifications {
+    margin-left: .5rem;
+    font-weight: 800;
+    font-size: 1rem;
+    background-color: var(--Blue);
+    padding: .1rem .7rem;
+    border-radius: .3rem;
+    color: var(--White);
+}
+
+.mark-all-msgs {
+    font-size: 1rem;
+    background: none; 
+    border: none;
+    cursor: pointer;
+    height: .3rem;
+    align-self: center;
+}
+
+.new {
+    background-color: var(--Verylightgrayishblue);
+    color:var(--Blue)
+}
+
+.dot {
+    margin-left: .5rem;
+    color: var(--Red);
+}
+
+.hide_dot {
+    display:none;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    max-width: 40rem;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+}
+
+img {
+    width: 2.8rem;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Darkgrayishblue);
+    font-weight: 800;
+}
+
+a:hover {
+    color: var(--Blue);
+}
+
+
+.user-name {
+    color: var(--Verydarkblue);
+    
+}
+
+.notification {
+    margin-left: 1.5rem;
+}
+
+.notification-text {
+    margin: 0;
+}
+
+.notification-img {
+    position: absolute;
+    margin-left: 11.4rem;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+small {
+    color: var(--Grayishblue);
+    font-size: .9rem;
+}
+
+
+.message-text {
+    max-width: 36rem;
+    margin-left: 5.7rem;
+    padding: 1rem;
+    border: 1px solid var(--Lightgrayishblue1);
+}
+
+.message-text:hover {
+    background-color: var(--Lightgrayishblue1);
+    cursor: pointer;
+}
+
+
+@media (max-width: 775px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .notification-img {
+        margin-left: 1.4rem;
+    }
+}
+
+@media (max-width:550px) {
+    .notification-img {
+        float: right;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 1.1rem;
+    }
+}
